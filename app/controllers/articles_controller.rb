@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
       # start keeping track of page_views using session_method
       session[:page_views] ||= 0
 
-      #increment page_view tracker by 1, when user "gets" another show/:id
+      #increment page_view tracker by 1, when user "gets" another show/:id (article)
       session[:page_views] += 1
 
       #whiles page_views is less than 3, render article
